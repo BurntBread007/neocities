@@ -1,0 +1,12 @@
+# GitHub Actions
+.github/*
+
+# macOS
+__MACOSX/
+._*
+.DS_Store
+.localized
+.Trashes
+.Spotlight-V100
+.VolumeIcon.icns
+.TemporaryItems
