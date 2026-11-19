@@ -1,15 +1,19 @@
 name: Push to Neocities
 run-name: Pushing repository changes to Neocities
+
 on: [push]
+
 jobs:
   Neocities:
     runs-on: self-hosted
     steps:
       - name: Update the neocities gem
-	run: |
-	  gem update neocities
-	  gem cleanup neocities
+        run: |
+          gem update neocities
+          gem cleanup neocities
+
       - run: neocities version
+
       - name: Push eligible files to Neocities website
         run: |
           neocities push -e .gitignore .
