@@ -7,6 +7,7 @@ jobs:
   Neocities:
     runs-on: self-hosted
     steps:
+      - uses: actions/checkout@v4
       - name: Update the neocities gem
         run: |
           gem update neocities
